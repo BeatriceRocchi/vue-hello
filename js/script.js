@@ -14,6 +14,13 @@ createApp({
       nameIns: "",
       nameColor: "lime",
       nameDecoration: "underline",
+      imgTravel: [
+        "./assets/img/imgTravel1.JPG",
+        "./assets/img/imgTravel2.jpg",
+        "./assets/img/imgTravel3.JPG",
+        "./assets/img/imgTravel4.JPG",
+      ],
+      indexImg: 0,
     };
   },
 
@@ -45,6 +52,14 @@ createApp({
     //Change name
     changeName() {
       this.name = this.nameIns;
+    },
+
+    //Change image
+    changeTravelImg() {
+      this.indexImg++;
+      if (this.indexImg === this.imgTravel.length) {
+        this.indexImg = 0;
+      }
     },
   },
 

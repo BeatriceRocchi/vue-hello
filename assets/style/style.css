@@ -37,3 +37,22 @@ img {
 .underline {
   text-decoration: underline;
 }
+
+.img_box {
+  margin: 20px auto;
+  height: 800px;
+  position: relative;
+}
+
+.img_box img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button_custom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
