@@ -18,3 +18,4 @@ Bonus: Aggiungere alla pagina un’immagine, presa anch’essa da un data.
     - Orologio
     - Countdown con colori diversi a seconda di numeri pari o dispari
     - Cambi di classi ai testi in base a valori di input
+    - Array di immagini con cambio dinamico
