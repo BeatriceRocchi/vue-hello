@@ -8,10 +8,13 @@ createApp({
       time: "00:00:00",
       textColor: "green",
       textBold: "bold",
+      counter: 10,
+      isEven: true,
     };
   },
 
   methods: {
+    //Clock
     printTime() {
       const date = new Date();
       let h = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
@@ -23,6 +26,16 @@ createApp({
     },
     updateTime() {
       setInterval(() => this.printTime(), 1000);
+    },
+
+    //Countdown
+    startCountdown() {
+      const countdown = setInterval(() => {
+        this.counter--;
+        if (this.counter === 0) {
+          clearInterval(countdown);
+        }
+      }, 1000);
     },
   },
 

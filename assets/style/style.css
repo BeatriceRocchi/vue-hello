@@ -9,3 +9,11 @@ img {
 .bold {
   font-weight: bold;
 }
+
+.even {
+  color: #42b883;
+}
+
+.odd {
+  color: #70a0ae;
+}

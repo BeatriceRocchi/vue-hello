@@ -16,3 +16,4 @@ Bonus: Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 
 3. Reattività aggiunte:
     - Orologio
+    - Countdown con colori diversi a seconda di numeri pari o dispari
