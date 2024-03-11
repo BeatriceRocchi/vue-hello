@@ -10,6 +10,10 @@ createApp({
       textBold: "bold",
       counter: 10,
       isEven: true,
+      name: "Beatrice",
+      nameIns: "",
+      nameColor: "lime",
+      nameDecoration: "underline",
     };
   },
 
@@ -36,6 +40,11 @@ createApp({
           clearInterval(countdown);
         }
       }, 1000);
+    },
+
+    //Change name
+    changeName() {
+      this.name = this.nameIns;
     },
   },
 

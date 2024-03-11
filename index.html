@@ -35,7 +35,7 @@
 
       <hr />
 
-      <div class="d-flex align-items-center justify-content-around">
+      <div class="d-flex align-items-center justify-content-around my-4">
         <h2>
           Countdown:
           <span :class="counter % 2 === 0 ? 'even' : 'odd'"
@@ -43,6 +43,31 @@
           </span>
         </h2>
         <button @click="startCountdown" class="btn btn-success">START</button>
+      </div>
+
+      <hr />
+
+      <h2 class="text-center my-4">
+        Mi chiamo
+        <strong :class="[nameColor, nameDecoration]">{{name}}</strong> e sto
+        imparando Vue
+      </h2>
+
+      <div class="d-flex align-items-center justify-content-around my-4">
+        <input @keyup.enter="changeName" type="text" v-model="nameIns" />
+        <button @click="changeName" class="btn btn-success">Cambia nome</button>
+      </div>
+
+      <div class="my-4">
+        <span class="mx-4">Cambia colore nome (lime, green, teal):</span>
+        <input type="text" v-model="nameColor" />
+      </div>
+
+      <div class="my-4">
+        <span class="mx-4"
+          >Cambia decorazione nome (underline, line-through, overline):</span
+        >
+        <input type="text" v-model="nameDecoration" />
       </div>
 
       <hr />

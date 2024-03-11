@@ -6,6 +6,14 @@ img {
   color: #42b883;
 }
 
+.teal {
+  color: #008080;
+}
+
+.lime {
+  color: limegreen;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -16,4 +24,16 @@ img {
 
 .odd {
   color: #70a0ae;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.underline {
+  text-decoration: underline;
 }
